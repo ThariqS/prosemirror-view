@@ -16,7 +16,7 @@ class SelectionReader {
     this.poller = poller(this)
 
     view.content.addEventListener("focus", () => this.poller.start())
-    view.content.addEventListener("blur", () => this.poller.stop())
+    // view.content.addEventListener("blur", () => this.poller.stop())
 
     if (!view.editable) this.poller.start()
   }
